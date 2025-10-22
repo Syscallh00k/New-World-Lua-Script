@@ -1,4 +1,4 @@
-[Code]
+```
 local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1
 L0_1 = require
 L1_1 = "LyShineUI.RingBuffer"
@@ -120,4 +120,4 @@ function L2_1(A0_2, A1_2, A2_2)
 end
 
 L1_1.SetChannelMode = L2_1
-[Code]
+```
