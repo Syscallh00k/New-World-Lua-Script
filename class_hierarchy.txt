@@ -1,0 +1,389 @@
+======================================================
+           CLASS HIERARCHY RECONSTRUCTION
+======================================================
+
+class **Cage**
+  member: IsSprinting
+---
+
+class **Chat**
+  member: ChannelPaneFocused
+  member: ChatAlwaysShowTimestamps
+  member: ChatColorMessageToChannel
+  member: ChatFontSize
+---
+
+class **Defiance**
+  pointer: **Counter**
+  pointer: **DrainAttack**
+---
+
+class **EntityId of the Mount Child Entity on the Player**
+  member: slice
+---
+
+class **Game**
+  member: GetFreeTransferCooldown
+---
+
+class **Hud**
+  pointer: **LocalPlayer**
+  member: ShowFullRaidForPvpModes
+  member: ShowLevelPointReminders
+---
+
+class **ItemLayout**
+  pointer: **lua: SetLayout() self**
+  member: lua: SetItem() itemType -THIS IS A BAD TYPE: 
+  member: lua: SetItemByName() failed to get itemData for item: 
+  member: lua: SetRarityBgColor() value - THIS RARITY VALUE IS NOT SUPPORTED: 
+---
+
+class **LyShineUi**
+  pointer: **Banners**
+---
+
+class **Onslaught**
+  pointer: **Combo**
+  pointer: **DashAttack**
+  pointer: **DefenseBreak**
+---
+
+class **PUGFinderScreen**
+  member: AllowJoinInProgress
+  member: OpenToActivity
+  member: OpenToLeaderboards
+  member: UpdateInitialState
+---
+
+class **PugFinderScreen**
+  member: GroupActivityEligibility
+---
+
+class **Scripts**
+  pointer: **ScriptedEntityTweener**
+  pointer: **WeaponEffects**
+  pointer: **_Common**
+---
+
+class **ShopScreen**
+  member: ShopId
+---
+
+class **Trying to connect a bus that is nil**
+  member: \n
+---
+
+class **UIFeatures**
+  member: enable-endgame-guide
+  member: enable-enhanced-dialogue
+  member: enable-map-clustering
+  member: enable-map-flyout-click-behavior
+  member: enable-on-demand-canvas-loading
+  member: enable-updated-reward-mapping
+  member: enableBoxOpeningPopup
+  member: enable_camp_warning_in_poi
+  member: g_chatSettings
+  member: g_enableContracts
+  member: g_enablePOIDiscovery
+  member: g_uiEnableClaimDamageBanner
+  member: g_uiEnableClaimProtectedBanner
+  member: g_uiEnableGloryBar
+  member: g_uiEnableHudSettings
+  member: g_uiEnableItemEntitlements
+  member: g_uiEnableReportPlayer
+  member: in-combat-banner-suppression-points
+  member: in-combat-banner-suppression-stations
+  member: in-combat-banner-suppression-war-declarations
+  member: map-icon-flyout-delay-in-seconds
+---
+
+class **Universal**
+  member: Default
+---
+
+class **Your { item, probability } pair is malformed! (ie**
+  member:  not enough elements, not a table, nil)
+---
+
+class **%d** : **Members**
+  member: %s
+  member: MatchmakingRole
+---
+
+class **Accessibility** : **Options**
+  member: TextSizeOption
+---
+
+class **Attributes** : **LocalPlayer**
+  member: ScreenChecked
+  member: UnspentPoints
+---
+
+class **Banners** : **LyShineUi**
+  member: BannerScreenId
+---
+
+class **CombatStatus** : **LocalPlayer**
+  member: IsInCombat
+---
+
+class **Combo** : **Onslaught**
+  pointer: **Default**
+---
+
+class **Counter** : **Defiance**
+  pointer: **Default**
+---
+
+class **Currency** : **LocalPlayer**
+  member: Amount
+---
+
+class **CurrentAreaTerritory** : **LocalPlayer**
+  member: ClaimKey
+  member: SmallestContainingId
+---
+
+class **Damage** : **LocalPlayer**
+  member: OnDownedPlayer
+  member: OnKilledPlayer
+---
+
+class **DashAttack** : **Onslaught**
+  pointer: **Default**
+---
+
+class **Default** : **Counter**
+  member: End
+  member: Impact
+  member: Swipe
+  member: Tell
+---
+
+class **DefenseBreak** : **Onslaught**
+  member: Default
+---
+
+class **DrainAttack** : **Defiance**
+  pointer: **Default**
+---
+
+class **EndgameGuide** : **LocalPlayer**
+  member: Viewed
+---
+
+class **Flyout** : **LocalPlayer**
+  member: IsVisible
+---
+
+class **GameMode** : **LocalPlayer**
+  pointer: **ParticipantFlags**
+  member: IsInDisableMasteriesGameMode
+---
+
+class **GameModeParticipantBus** : **LocalPlayer**
+  member: IsReady
+---
+
+class **Group** : **LocalPlayer**
+  pointer: **Members**
+  member: Id
+  member: MatchmakingRole
+  member: MaxMembers
+  member: MemberCount
+  member: Members
+  member: Role
+---
+
+class **GroupFinder** : **LocalPlayer**
+  member: GroupId
+---
+
+class **Guild** : **LocalPlayer**
+  pointer: **LastBuildableAttacked**
+  pointer: **LastEnemyClaimDestroyed**
+  pointer: **LastLockedClaimTaken**
+  member: Crest
+  member: Id
+  member: LastModifiedGuildWarId
+  member: Name
+---
+
+class **HudComponent** : **LocalPlayer**
+  member: GDERootEntityId
+  member: GatheringEntityId
+  member: ObjectiveEntityId
+  member: OutpostId
+  member: PaperdollEntityId
+  member: PlayerEntityId
+---
+
+class **ItemDragging** : **LocalPlayer**
+  member: ContainerId
+  member: ContainerType
+  member: GemSlotId
+  member: RepairKitSlotId
+  member: RepairKitTier
+---
+
+class **ItemsToProcure** : **LocalPlayer**
+  member: ObjectiveIds
+  member: RefCount
+---
+
+class **Journal** : **LocalPlayer**
+  member: ChapterComplete
+  member: NewChapterId
+---
+
+class **Keybind** : **LocalPlayer**
+  member: Reset
+---
+
+class **LastBuildableAttacked** : **Guild**
+  member: Position
+---
+
+class **LastEnemyClaimDestroyed** : **Guild**
+  member: ClaimName
+  member: ClaimPosition
+  member: EnemyGuild
+  member: EnemyGuildId
+---
+
+class **LastLockedClaimTaken** : **Guild**
+  member: ClaimName
+  member: ClaimingGuild
+  member: ClaimingGuildId
+---
+
+class **LocalPlayer** : **Hud**
+  pointer: **Attributes**
+  pointer: **CombatStatus**
+  pointer: **Currency**
+  pointer: **CurrentAreaTerritory**
+  pointer: **Damage**
+  pointer: **EndgameGuide**
+  pointer: **Flyout**
+  pointer: **GameMode**
+  pointer: **GameModeParticipantBus**
+  pointer: **Group**
+  pointer: **GroupFinder**
+  pointer: **Guild**
+  pointer: **HudComponent**
+  pointer: **ItemDragging**
+  pointer: **ItemsToProcure**
+  pointer: **Journal**
+  pointer: **Keybind**
+  pointer: **Map**
+  pointer: **Matchmaking**
+  pointer: **OWGMissionTurnIn**
+  pointer: **Options**
+  pointer: **Progression**
+  pointer: **Raid**
+  pointer: **SeasonsRewards**
+  pointer: **Siege**
+  pointer: **Skills**
+  pointer: **Trial**
+  member: Cooldowns
+  member: DeathPosition
+  member: EnteredSettlementId
+  member: FCPOverpopulateTeleportTime
+  member: Faction
+  member: HomePoints
+  member: InventoryScriptElement
+  member: IsLandClaimManagerAvailable
+  member: Keybind
+  member: OverpopulateTeleportTime
+  member: PlayerName
+  member: Position
+  member: WarDataBeenReplicated
+  member: WayPointEntityId
+  member: WaypointPosition
+---
+
+class **Localization** : **Options**
+  member: Language
+---
+
+class **Map** : **LocalPlayer**
+  member: Filter
+  member: ScreenChecked
+  member: ZoomLevelMPP
+---
+
+class **Matchmaking** : **LocalPlayer**
+  member: IsInRoleSelection
+---
+
+class **Members** : **Group**
+  pointer: **%d**
+---
+
+class **OWGMissionTurnIn** : **LocalPlayer**
+  member: Position
+  member: Visible
+---
+
+class **Options** : **LocalPlayer**
+  pointer: **Accessibility**
+  pointer: **Chat**
+  pointer: **Hud**
+  pointer: **Localization**
+  pointer: **Video**
+---
+
+class **ParticipantFlags** : **GameMode**
+  member: DisableAmmoConsumption
+  member: DisableConsumablesConsumption
+---
+
+class **Progression** : **LocalPlayer**
+  member: Level
+---
+
+class **Raid** : **LocalPlayer**
+  member: Id
+  member: Type
+---
+
+class **ScriptedEntityTweener** : **Scripts**
+  member: ScriptedEntityTweener
+---
+
+class **SeasonsRewards** : **LocalPlayer**
+  member: ActivityCardStampableCount
+  member: NumPendingRedeems
+---
+
+class **Siege** : **LocalPlayer**
+  member: SiegePhase
+---
+
+class **Skills** : **LocalPlayer**
+  member: MasteryPoints
+  member: PvpAvailableCheckpoints
+  member: ScreenChecked
+---
+
+class **Trial** : **LocalPlayer**
+  member: NewPersonalBestTime
+---
+
+class **Video** : **Options**
+  member: HudAlwaysFade
+---
+
+class **WeaponEffects** : **Scripts**
+  member: WeaponEffectBase
+---
+
+class **_Common** : **Scripts**
+  member: Logger
+---
+
+class **lua: SetLayout() self** : **ItemLayout**
+  member: mItemData_itemType - THIS ITEM TYPE IS NOT SUPPORTED AND DOES NOT HAVE A TEXTURE ATLAS: 
+---
+
